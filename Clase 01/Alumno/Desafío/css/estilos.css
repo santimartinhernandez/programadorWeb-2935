@@ -200,7 +200,7 @@ h3 {
   text-decoration: none;
   text-anchor: end;
   /*margin-top: 10px;*/
-  margin-bottom: 15px;
+
   margin-left: 0px;
   display: inline;
   text-align: center;
@@ -253,12 +253,10 @@ h3 {
   */
 
   background: -webkit-linear-gradient
-    (to right, rgb(115, 233, 115), rgb(25, 177, 20));
-  background: -moz-linear-gradient
-    (to right, rgb(115, 233, 115), rgb(25, 177, 20));
-  background: -o-linear-gradient
-    (to right, rgb(115, 233, 115), rgb(25, 177, 20));
-  background: linear-gradient(to right, rgb(115, 233, 115), rgb(25, 177, 20));
+    (to right, rgb(75, 177, 75), rgb(5, 124, 1));
+  background: -moz-linear-gradient (to right, rgb(75, 177, 75), rgb(5, 124, 1));
+  background: -o-linear-gradient (to right, rgb(75, 177, 75), rgb(5, 124, 1));
+  background: linear-gradient(to right, rgb(75, 177, 75), rgb(5, 124, 1));
 
   -webkit-transition: background 0.5s ease-in;
   -moz-transition: background 0.5s ease-in;
@@ -282,7 +280,7 @@ h3 {
   text-decoration: none;
   text-anchor: end;
   /*margin-top: 10px;*/
-  margin-bottom: 15px;
+
   margin-left: 0px;
   display: inline;
   text-align: center;
@@ -294,4 +292,8 @@ h3 {
   cursor: hand;
 
   background-size: 300px, 300px;
+}
+
+.form-control {
+  height: 55px;
 }
