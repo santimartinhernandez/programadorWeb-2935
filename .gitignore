@@ -2,9 +2,11 @@
 .DS_Store
 /**/.DS_Store
 /node_modules
-/**/Profe/Desafío
-/**/Profe/Ejercicio
-/Clase 03
+
+
+
+/Clase 03/Profe/Ejercicio
+/Clase 03/Profe/Desafío
 /Clase 04
 /Clase 05
 
