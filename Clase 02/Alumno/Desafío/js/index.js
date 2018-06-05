@@ -1,34 +1,38 @@
-// EJERCICIO 2
+// EDESAFÍO 2
 
-var dia
+var genero
+var edad
+var message
 
-dia = prompt('Decime un día')
+genero = prompt('Ingresa tu genero')
+edad = prompt('¿Cuántos años tenes?')
 
-if (dia === 'sabado' || dia === 'domingo') {
-  console.log('Es fin de semana')
+switch (genero) {
+  case 'male':
+  case 'hombre':
+  case 'masculino':
+    genero = 'Sr.'
+    break
+
+  case 'female':
+  case 'mujer':
+  case 'femenino':
+    genero = 'Sra.'
+    break
+
+  default:
+    // GENERO NO BINARIO
+    genero = 'Sx.'
+    break
 }
 
-if (
-  dia === 'lunes' ||
-  dia === 'martes' ||
-  dia === 'miercoles' ||
-  dia === 'jueves' ||
-  dia === 'viernes'
-) {
-  console.log('Es día de semana')
+if (edad >= 18) {
+  edad = 'mayor de edad puede ingresar'
+} else {
+  edad = 'menor de edad no puede ingresar'
 }
 
-if (
-  dia != 'sabado' &&
-  dia != 'domingo' &&
-  dia != 'lunes' &&
-  dia != 'martes' &&
-  dia != 'miercoles' &&
-  dia != 'jueves' &&
-  dia != 'viernes'
-) {
-  console.log('El día no existe')
-}
+console.log(genero + 'usted es ' + edad)
 
 // 5. Variables
 
