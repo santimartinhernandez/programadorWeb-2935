@@ -21,8 +21,6 @@ var daysOfTheWeek = [
 
 **Documentación:**
 
-<<<<<<< HEAD
 - [for](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/for)
-=======
-- [for](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/for)
->>>>>>> 7547ae3253f2d69c857d8e56d18ad948b33dc47c
+
+
