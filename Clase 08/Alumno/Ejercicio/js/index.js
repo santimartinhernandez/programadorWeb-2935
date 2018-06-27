@@ -15,7 +15,7 @@
 // var firstName = prompt('Ingrese su nombre')
 
 // mainContainer.innerHTML =
-'<h2 class="red" id="new-main-title">Hola ' + firstName + '</h2>'
+//   '<h2 class="red" id="new-main-title">Hola ' + firstName + '</h2>'
 
 // var title = document.getElementById('new-main-title')
 
@@ -27,10 +27,10 @@
 
 // var listItemNode
 
-for (var i = 0; i < listItemsNodes.length; i++) {
-  listItemNode = listItemsNodes[i]
-  listItemNode.innerHTML = '<h1>Elefante número ' + (i + 1) + '</h1>'
-}
+// for (var i = 0; i < listItemsNodes.length; i++) {
+//   listItemNode = listItemsNodes[i]
+//   listItemNode.innerHTML = '<h1>Elefante número ' + (i + 1) + '</h1>'
+// }
 
 // - 8.4	Crear y eliminar nodos
 //    - `createElement`
@@ -39,14 +39,14 @@ var mainListNode = document.getElementById('main-list')
 
 mainListNode.innerHTML = ''
 
-var numbers = [1, 2, 34, 45, 5, 6, 677, 8, 8]
+var texts = ['Ed', 'Edd', 'Eddy']
 
 var liNode
 
-for (var i = 0; i < numbers.length; i++) {
+for (var i = 0; i < texts.length; i++) {
   liNode = document.createElement('li')
-  liNode.className = 'red blue'
-  liNode.innerHTML = numbers[i]
+  liNode.className = 'list-group'
+  liNode.innerHTML = texts[i]
   liNode.id = i
   mainListNode.appendChild(liNode)
 }
