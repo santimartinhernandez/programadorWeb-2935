@@ -1,4 +1,4 @@
-// EJERCICIO CLASE 5
+// DESAFIO CLASE 8
 
 console.log('funciona')
 
@@ -65,16 +65,9 @@ for (i = 0; i < students.length; i++) {
   newStudents.push(student)
 }
 
-for (i = 0; i < students.length; i++) {
-  console.log(newStudents[i].getId())
-  console.log(newStudents[i].getFullName())
-}
-
-var mainListNode = document.getElementById('main-list')
-
-var liNode
-
-for (var i = 0; i < newStudents.length; i++) {
+function createStudentNode(student) {
+  var mainListNode = document.getElementById('main-list')
+  var liNode
   liNode = document.createElement('li')
   liNode.className = 'list-group'
   liNode.innerHTML =
@@ -89,6 +82,12 @@ for (var i = 0; i < newStudents.length; i++) {
     '</h5>'
 
   liNode.id = newStudents[i].getId()
-
   mainListNode.appendChild(liNode)
+
+  return liNode
+}
+
+for (i = 0; i < students.length; i++) {
+  createStudentNode(newStudents[i])
+  //console.log(liNode)
 }
